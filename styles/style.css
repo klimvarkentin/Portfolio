@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     width: 1400px;
     padding: 33px 124px 94px 119px;
-    background-image: url('/resources/programmer.jpeg');
+    background-image: url('../resources/programmer.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -36,7 +36,7 @@ body {
     position: absolute;
     padding: 0 12px 0 9px;
     height: 39px;
-    background-image: url('/resources/black-rectangle.png');
+    background-image: url('../resources/black-rectangle.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
@@ -111,15 +111,15 @@ body {
 }
 
 .realhome {
-    background-image: url('/resources/realhome.jpeg');
+    background-image: url('../resources/realhome.jpeg');
 }
 
 .glass {
-    background-image: url('/resources/glass.jpeg');
+    background-image: url('../resources/glass.jpeg');
 }
 
 .fesiyen{
-    background-image: url('/resources/fesiyen.jpeg');
+    background-image: url('../resources/fesiyen.jpeg');
 }
 
 .projects__example:last-child {
@@ -270,7 +270,7 @@ body {
     height: 717px;
     background-color: #191C19;
     border-radius: 30px;
-    background-image: url('/resources/contacts.png');
+    background-image: url('../resources/contacts.png');
     background-repeat: no-repeat;
     background-size: 65.5%;
     background-position-x: 138%;
