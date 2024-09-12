@@ -1,0 +1,117 @@
+.competencies {
+    padding-top: 150px;
+}
+
+.competencies__heading {
+    margin-bottom: 139px;
+    font-size: 55px;
+    line-height: 72px;
+    color: rgb(255, 255, 255);
+}
+
+.competencies__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 100px;
+}
+
+.competencies__item {
+    position: relative;
+    width: calc(50% - 25px);
+}
+
+.competencies__skill {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 46px;
+    color: rgb(27, 255, 7);
+}
+
+.competencies__description {
+    font-size: 22px;
+    line-height: 29px;
+    color: rgb(255, 255, 255);
+}
+
+.competencies__item::before  {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -50px;
+    width: 45px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.html-skill::before {
+    background-image: url('../resources/html-icon.png');
+}
+
+.js-skill::before {
+    background-image: url('../resources/js-icon.png');
+}
+
+.framework-skill::before {
+    background-image: url('../resources/framework-icon.png');
+}
+
+.adaptive-skill::before {
+    background-image: url('../resources/adaptive-icon.png');
+}
+
+@media (max-width: 1199px) {
+    .competencies__heading {
+        margin-bottom: 106px;
+        font-size: 45px;
+        line-height: 58px;
+    }
+
+    .competencies__list {
+        column-gap: 40px;
+        row-gap: 90px;
+    }
+
+    .competencies__item {
+        width: calc(50% - 20px);
+    }
+
+    .competencies__skill {
+        margin-bottom: 15px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .competencies__description {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .competencies__item::before  {
+        left: 3px;
+        top: -50px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .competencies {
+        padding-top: 100px;
+    }
+
+    .competencies__heading {
+        margin-bottom: 122px;
+    }
+
+    .competencies__list {
+        flex-direction: column;
+        gap: 106px;
+    }
+
+    .competencies__item {
+        width: 100%;
+    }
+}

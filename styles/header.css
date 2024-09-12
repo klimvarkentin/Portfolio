@@ -1,0 +1,86 @@
+.header {
+    padding-top: 36px;
+    padding-bottom: 94px;
+    width: 100%;
+    background-image: url('../resources/programmer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link:hover {
+    cursor: pointer;
+}
+
+.nav__link {
+    font-size: 18px;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav__link:hover {
+    color: rgb(27, 255, 7);
+}
+
+.greeting__description {
+    margin-top: 252px;
+    width: 430px;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+
+.greeting__text {
+    margin-top: 30px;
+    width: 919px;
+    font-size: 80px;
+    line-height: 70px;
+    color: rgb(27, 255, 7);
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding-top: 23px;
+        padding-bottom: 60px;
+    }
+
+    .greeting__description {
+        margin-top: 290px;
+    }
+    
+    .greeting__text {
+        margin-top: 30px;
+        width: 727px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .greeting__description {
+        margin-top: 260px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .greeting__text {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 47px;
+    }
+}

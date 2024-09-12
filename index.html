@@ -15,141 +15,192 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-        <div class="section">
             <header class="header">
-                <nav class="nav">
-
-                    <div class="nav__surname">
-                        <p class="nav__text">VARKENTIN</p>
+                <div class="container">
+                    <div class="header-inner">
+                        <a class="logo-link">
+                            <img class="logo" src="resources/Varkentin.png" alt="Логотип с фамилией">
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#portfolio" class="nav__link">портфолио</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#competencies" class="nav__link">компетенции</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#services" class="nav__link">услуги</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#contacts" class="nav__link">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="js-burger-btn burger-btn"></div>
                     </div>
-
-                    <div class="nav__sections">
-                        <a href="#portfolio" class="nav__link">портфолио</a>
-                        <a href="#competencies" class="nav__link">компетенции</a>
-                        <a href="#services" class="nav__link">услуги</a>
-                        <a href="#contacts" class="nav__link">контакты</a>
-                    </div>
-                </nav>
-
+                    <section class="greeting">
+                        <p class="greeting__description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+                        <h1 class="greeting__text">Привет, я Клим — фронтенд разработчик и дизайнер сайтов</h1>
+                    </section>
+                </div>
             </header>
 
-            <section class="greeting">
-                <p class="description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
-                <h1 class="greeting">Привет, я Клим — фронтенд разработчик и дизайнер сайтов</h1>
-            </section>
-        </div>
+            <div class="js-burger burger">
+                <div class="burger__content">
+                    <a class="logo-link">
+                        <img class="logo" src="resources/Varkentin.png" alt="Логотип с фамилией">
+                    </a>
+                    <nav class="burger-nav">
+                        <ul class="burger-nav__list">
+                            <li class="burger-nav__item">
+                                <a href="#portfolio" class="burger-nav__link">портфолио</a>
+                            </li>
+                            <li class="burger-nav__item">
+                                <a href="#competencies" class="burger-nav__link">компетенции</a>
+                            </li>
+                            <li class="burger-nav__item">
+                                <a href="#services" class="burger-nav__link">услуги</a>
+                            </li>
+                            <li class="burger-nav__item">
+                                <a href="#contacts" class="burger-nav__link">контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger__contacts js-burger__content">
+                        <p class="burger-text">для связи:</p>
+                        <p class="burger-footer__social">telegram</p>
+                        <p class="burger-footer__social">mail</p>
+                        <p class="burger-footer__social">instagram</p>
+                    </div>
+                </div>
+            </div>
         
+            <main class="main">
+                <section class="projects">
+                    <div class="container">
+                        <h2 id="portfolio" class="projects__heading">Самые свежие проекты</h2>
+                            <ul class="projects__list">
+                                <li class="projects__example metrika">
+                                    <div class="projects__service">дизайн интерьера</div>
+                                    <h3 class="projects__name">Метрика</h3>
+                                    <p class="projects__description">верстка, настройка</p>
+                                </li>
+                                <li class="projects__example nothing">
+                                    <div class="projects__service">презентация продукта</div>
+                                    <h3 class="projects__name">Nothing</h3>
+                                    <p class="projects__description">верстка, настройка</p>
+                                </li>
+                                <li class="projects__example toptrip">
+                                    <div class="projects__service">заказ путешествий</div>
+                                    <h3 class="projects__name">TOPTRIP</h3>
+                                    <p class="projects__description">верстка</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="projects__link">Смотреть все проекты</a>
+                    </div>
+                </section>
 
-        <div class="section section__black">
-            <section class="projects"> 
-                <h2 id="portfolio" class="projects__heading">Самые свежие проекты</h2>
-                    <ul>
-                        <li class="projects__example realhome">
-                            <h3 class="projects__name">Realhome</h3>
-                            <p class="projects__description">дизайн, верстка, настройка</p>
-                        </li>
+                <section class="competencies">
+                    <div class="container">
+                        <h2 id="competencies" class="competencies__heading">Мои компетенции</h2>
+                        <ul class="competencies__list">
+                            <li class="competencies__item html-skill">
+                                <h3 class="competencies__skill">HTML и CSS</h3>
+                                <p class="competencies__description">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+                            </li>
+                            <li class="competencies__item js-skill">
+                                <h3 class="competencies__skill">JavaScript</h3>
+                                <p class="competencies__description">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+                            </li>
+                            <li class="competencies__item framework-skill">
+                                <h3 class="competencies__skill">Работа с библиотеками и фреймворками</h3>
+                                <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                            </li>
+                            <li class="competencies__item adaptive-skill">
+                                <h3 class="competencies__skill">Разработка для мобильных устроств и адаптивная вёрстка</h3>
+                                <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                        <li class="projects__example glass">
-                            <h3 class="projects__name">GLASS</h3>
-                            <p class="projects__description">разработка интерфейса</p>
-                        </li>
+                <section class="services">
+                    <div class="container">
+                        <h2 id="services" class="services__heading">Помогаю реализовать широкий спектр задач</h2>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <img class="services__img" src="resources/site-development.jpeg" alt="Разработка сайта">
+                                <div class="services__container">
+                                    <h3 class="services__skill">Разработка сайта под ключ</h3>
+                                    <p class="services__description">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>
+                                        Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+                                    </div>
+                            </li>
+                            <li class="services__item">
+                                <img class="services__img" src="resources/layout.jpeg" alt="Вёрстка сайтов">
+                                <div class="services__container">
+                                    <h3 class="services__skill">Верстка сайтов</h3>
+                                    <p class="services__description">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <img class="services__img" src="resources/mobile-development.jpeg" alt="Разработка мобильного интерфейса">
+                                <div class="services__container">
+                                    <h3 class="services__skill">Разработка мобильного интерфейса</h3>
+                                    <p class="services__description">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                     
+                <section id="contacts" class="contacts">
+                        <div class="container">
+                            <div class="contacts__container">
+                                <div class="contacts__wrapper">
+                                    <h4 class="contacts__heading">Для связи со мной заполните простую форму</h4>
+                                    <form autocomplete="on">
+                                        <input
+                                        class="input"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Имя Фамилия">
+                                        <input
+                                        class="input"
+                                        type="email"
+                                        name="email"
+                                        placeholder="example@mail.com">
+                                    </form>
+                                    <button class="contacts__btn">Отправить</button>
+                            </div>
+                            </div>
+                        </div>
+                </section>
+            </main>
 
-                        <li class="projects__example fesiyen">
-                            <h3 class="projects__name">Fesiyen</h3>
-                            <p class="projects__description">разработка интерфейса</p>
-                        </li>
-                    </ul>
-                    
-                    <a href="#" class="projects__link">Смотреть все проекты</a>
-                    
-            </section>
-
-            <section class="competencies">
-                <h2 id="competencies" class="competencies__heading">Мои компетенции</h2>
-
-                <ul>
-                    <li class="competencies__item">
-                        <img class="competencies__img" src="resources/html-icon.png" alt="Иконка HTML">
-                        <h3 class="competencies__skill">HTML и CSS</h3>
-                        <p class="competencies__description">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+        
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <p class="footer__portfolio">Портфолио фронтенд-разработчика Клима Варкентина</p>
                     </li>
-
-                    <li class="competencies__item">
-                        <img class="competencies__img" src="resources/js-icon.png" alt="Иконка JS">
-                        <h3 class="competencies__skill">JavaScript</h3>
-                        <p class="competencies__description">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+                    <li class="footer__item">
+                        <p class="footer__social">mail</p>
+                        <p class="footer__social">telegram</p>
+                        <p class="footer__social">instagram</p>
                     </li>
-
-                    <li class="competencies__item">
-                        <img class="competencies__img" src="resources/framework-icon.png" alt="Иконка Framework">
-                        <h3 class="competencies__skill">Работа с библиотеками и фреймворками</h3>
-                        <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                    <li class="footer__item">
+                        <p class="footer__rights">Все права защищены. 2024</p>
                     </li>
-
-                    <li class="competencies__item">
-                        <img class="competencies__img" src="resources/adaptive-icon.png" alt="Иконка Adaptive">
-                        <h3 class="competencies__skill">Разработка для мобильных устроств и адаптивная вёрстка</h3>
-                        <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                    <li class="footer__item">
+                        <p class="footer__policy">политика обработки данных</p>
                     </li>
                 </ul>
-            </section>
-
-            <section class="services">
-                <h2 id="services" class="services__heading">Помогаю реализовать широкий спектр задач</h2>
-
-                <ul>
-                    <li class="services__item">
-                        <img class="services__img" src="resources/site-development.jpeg" alt="Разработка сайта">
-                        <div class="services__container">
-                            <h3 class="services__skill">Разработка сайта под ключ</h3>
-                            <p class="services__description">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>
-                                Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
-                        </div>
-                    </li>
-
-                    <li class="services__item">
-                        <img class="services__img" src="resources/layout.jpeg" alt="Вёрстка сайтов">
-                        <div class="services__container">
-                            <h3 class="services__skill">Верстка сайтов</h3>
-                            <p class="services__description">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
-                        </div>
-                    </li>
-
-                    <li class="services__item">
-                        <img class="services__img" src="resources/mobile-development.jpeg" alt="Разработка мобильного интерфейса">
-                        <div class="services__container">
-                            <h3 class="services__skill">Разработка мобильного интерфейса</h3>
-                            <p class="services__description">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </div>
-
-        
-        <div class="section section__black section__black-contacts">
-            <section id="contacts" class="contacts">
-                    <h4 class="contacts__heading">для связи:</h4>
-                    <div class="contacts__link-container">
-                        <a href="#" class="contacts__link">instagram</a>
-                    </div>
-                    <div class="contacts__link-container">
-                        <a href="#" class="contacts__link">telegram</a>
-                    </div>
-                    <div class="contacts__link-container">
-                        <a href="#" class="contacts__link">mail</a>
-                    </div>
-            </section>
-        </div>
-
-        <div class="section section__black section__black-footer">
-            <section class="footer">
-                    <div class="footer__container">
-                        <p>Портфолио фронтенд-разработчика Клима Варкентина</p>
-                    </div>
-                    <p class="footer__rights">Все права защищены. 2024</p>
-            </section>
-        </div>
+            </div>
+        </footer>
      
+        <script src="burger.js"></script>
 </body>
 </html>
